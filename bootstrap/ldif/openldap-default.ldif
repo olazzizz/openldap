@@ -207,6 +207,17 @@ userPassword: Passw0rd
 
 ### Create all of the groups and assign the users
 
+dn: cn=develpers,ou=groups,dc=ibm,dc=com
+changetype: add
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: developers
+uniquemember: uid=todd,ou=users,dc=ibm,dc=com
+uniquemember: uid=james,ou=users,dc=ibm,dc=com
+uniquemember: uid=sarah,ou=users,dc=ibm,dc=com
+uniquemember: uid=jane,ou=users,dc=ibm,dc=com
+uniquemember: uid=mike,ou=users,dc=ibm,dc=com
+
 dn: cn=operations,ou=groups,dc=ibm,dc=com
 changetype: add
 objectClass: groupOfUniqueNames

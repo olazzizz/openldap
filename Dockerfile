@@ -1,5 +1,5 @@
-FROM osixia/openldap:1.3.0
-MAINTAINER ibmzavala
+FROM docker.io/osixia/openldap:1.4.0
+MAINTAINER "Onofrio Lazzizzera"
 
 ADD bootstrap /container/service/slapd/assets/config/bootstrap
 ADD certs /container/service/slapd/assets/certs
